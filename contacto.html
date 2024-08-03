@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado - Inicio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <section class="container">
+          <div class="logo">
+            <a href="index.html">ORO</a>
+            <img src="assets/oroLogo.png" alt="">
+          </div>
+          <button class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+            </svg>
+          </button>
+          <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </section>
+      </header>
+
+      <section class="contact-section ">
+        <form action="" class="contact-form ">
+          <h1 class="contact-form--title">Formulario de Contacto</h1>
+          <div class="contact-form--container">
+            <div class="contact-form--group">
+              <input type="text" id="name" class="contact-form--input" placeholder=" ">
+              <label for="name" class="contact-form--label">Nombre</label>
+              <span class="contact-form--line"></span>
+            </div>
+            <div class="contact-form--group">
+              <input type="text" id="surname" class="contact-form--input" placeholder=" ">
+              <label for="surname" class="contact-form--label">Apellido</label>
+              <span class="contact-form--line"></span>
+            </div>
+            <div class="contact-form--group">
+              <input type="email" id="email" class="contact-form--input" placeholder=" ">
+              <label for="email" class="contact-form--label">Email</label>
+              <span class="contact-form--line"></span>
+            </div>
+            <div class="contact-form--group">
+              <input type="tel" id="phone" class="contact-form--input" placeholder=" ">
+              <label for="phone" class="contact-form--label">Teléfono</label>
+              <span class="contact-form--line"></span>
+            </div>
+            <div class="contact-form--group">
+              <textarea id="message" class="contact-form--input" placeholder=" " rows="4"></textarea>
+              <label for="message" class="contact-form--label">Consulta</label>
+              <span class="contact-form--line"></span>
+            </div>
+            <button type="submit" class="contact-form--submit">Enviar</button>
+            <span class="contact-form--error-message" id="formError"></span>
+          </div>
+        </form>
+      </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Supermercado - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>
