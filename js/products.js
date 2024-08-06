@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             
             if (quantity) {
-                const qty = parseInt(quantity,10); 
+                const qty = parseFloat(quantity,10); 
                 if (isNaN(qty) || qty < 1 || qty > product.stock || !Number.isInteger(qty)) {
                     errorMessage.textContent = `Error: La cantidad para ${product.name} debe ser un número entero entre 1 y ${product.stock}.`;
                     hasError = true;
