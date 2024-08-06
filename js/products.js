@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { 
             id: 6, 
             name: `Zanahorias`, 
-            price: 324, 
+            price: 1.250, 
             stock: 8, 
             image: `https://masonlineprod.vtexassets.com/arquivos/ids/289721-1200-auto?v=638242005801900000&width=1200&height=auto&aspect=true`, 
-            description: `Zanahoria 250g.` },
+            description: `Zanahoria 1kg.` },
         { 
             id: 7, 
             name: `Pañales`, 
