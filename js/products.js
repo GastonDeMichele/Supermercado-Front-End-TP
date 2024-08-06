@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderProducts() {
         products.forEach(product => {
             const productCard = document.createElement("div");
-            productCard.className = 'product-card';
+            productCard.className = `product-card`;
             productCard.innerHTML =  `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
@@ -107,16 +107,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         products.forEach(product => {
             const quantity = document.getElementById(`quantity-${product.id}`).value;
-            const qty = quantity; 
+
             
             if (quantity) {
-                
+                const qty = parseInt(quantity,10); 
                 if (isNaN(qty) || qty < 1 || qty > product.stock || !Number.isInteger(qty)) {
                     errorMessage.textContent = `Error: La cantidad para ${product.name} debe ser un número entero entre 1 y ${product.stock}.`;
                     hasError = true;
                 } else {
                     total += qty * product.price;
                 }
+
+
+                if (!hasError) {
+                    console.log(`Total Final: ${total}`);
+                }
+
+
             }
         });
 
